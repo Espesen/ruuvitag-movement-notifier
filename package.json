@@ -20,7 +20,7 @@
     "gulp-util": "^3.0.8"
   },
   "dependencies": {
-    "node-ruuvitag": "^1.0.1",
+    "node-ruuvitag": "^2.1.0",
     "pushbullet": "^2.0.0"
   }
 }
