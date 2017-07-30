@@ -34,9 +34,5 @@ function onFound(ruuviTag) {
 }
 
 console.log('Starting scan...');
-ruuvi.findTags()
-  .then(tags => {
-    console.log('Scan finished, found ' + tags.length + ' RuuviTags.');
-    tags.forEach(onFound);
-  })
-  .catch(err => console.error(err));
+
+ruuvi.on('found', onFound);
